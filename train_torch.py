@@ -109,7 +109,6 @@ class CharDataset(Dataset):
         return(token_ids, np.array(mask),
                labels_ids)
 
-
 class KoGPT2Chat(LightningModule):
     def __init__(self, hparams, **kwargs):
         super(KoGPT2Chat, self).__init__()
